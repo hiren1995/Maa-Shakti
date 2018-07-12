@@ -1,0 +1,6 @@
+framework module Pods_Maa_Shakti {
+  umbrella header "Pods-Maa Shakti-umbrella.h"
+
+  export *
+  module * { export * }
+}

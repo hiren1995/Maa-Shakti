@@ -8,12 +8,17 @@
 
 /* Begin PBXBuildFile section */
 		18FAC7B720F737F1006C89B9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18FAC7B620F737F1006C89B9 /* AppDelegate.swift */; };
-		18FAC7B920F737F1006C89B9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18FAC7B820F737F1006C89B9 /* ViewController.swift */; };
 		18FAC7BC20F737F1006C89B9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18FAC7BA20F737F1006C89B9 /* Main.storyboard */; };
 		18FAC7BE20F737FA006C89B9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18FAC7BD20F737FA006C89B9 /* Assets.xcassets */; };
 		18FAC7C120F737FA006C89B9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18FAC7BF20F737FA006C89B9 /* LaunchScreen.storyboard */; };
 		18FAC7CC20F737FA006C89B9 /* Maa_ShaktiTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18FAC7CB20F737FA006C89B9 /* Maa_ShaktiTests.swift */; };
 		18FAC7D720F737FA006C89B9 /* Maa_ShaktiUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18FAC7D620F737FA006C89B9 /* Maa_ShaktiUITests.swift */; };
+		18FAC7E520F747B2006C89B9 /* SlideMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18FAC7E420F747B2006C89B9 /* SlideMenuViewController.swift */; };
+		18FAC7EB20F7482F006C89B9 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18FAC7EA20F7482F006C89B9 /* MenuViewController.swift */; };
+		18FAC7ED20F74841006C89B9 /* DashBoardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18FAC7EC20F74841006C89B9 /* DashBoardViewController.swift */; };
+		81ED3B0460367974EFFE3D63 /* Pods_Maa_ShaktiTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 234B39C5AF8AD5988A67FDFE /* Pods_Maa_ShaktiTests.framework */; };
+		B13C8456C4D1B7696990E98E /* Pods_Maa_ShaktiUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 388761154F71463C03F78C82 /* Pods_Maa_ShaktiUITests.framework */; };
+		EAF13466B5C71D414590B3D0 /* Pods_Maa_Shakti.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F0C0C722AC655C56B3ACE4A /* Pods_Maa_Shakti.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +41,6 @@
 /* Begin PBXFileReference section */
 		18FAC7B320F737F1006C89B9 /* Maa Shakti.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Maa Shakti.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		18FAC7B620F737F1006C89B9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		18FAC7B820F737F1006C89B9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		18FAC7BB20F737F1006C89B9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		18FAC7BD20F737FA006C89B9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		18FAC7C020F737FA006C89B9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +51,18 @@
 		18FAC7D220F737FA006C89B9 /* Maa ShaktiUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Maa ShaktiUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		18FAC7D620F737FA006C89B9 /* Maa_ShaktiUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Maa_ShaktiUITests.swift; sourceTree = "<group>"; };
 		18FAC7D820F737FA006C89B9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		18FAC7E420F747B2006C89B9 /* SlideMenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlideMenuViewController.swift; sourceTree = "<group>"; };
+		18FAC7EA20F7482F006C89B9 /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
+		18FAC7EC20F74841006C89B9 /* DashBoardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashBoardViewController.swift; sourceTree = "<group>"; };
+		234B39C5AF8AD5988A67FDFE /* Pods_Maa_ShaktiTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Maa_ShaktiTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2F0C0C722AC655C56B3ACE4A /* Pods_Maa_Shakti.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Maa_Shakti.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		388761154F71463C03F78C82 /* Pods_Maa_ShaktiUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Maa_ShaktiUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		40F9C14BDA08A53D181D6E0D /* Pods-Maa Shakti.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Maa Shakti.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Maa Shakti/Pods-Maa Shakti.debug.xcconfig"; sourceTree = "<group>"; };
+		92F02AD10537C4E068B41EE2 /* Pods-Maa ShaktiUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Maa ShaktiUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Maa ShaktiUITests/Pods-Maa ShaktiUITests.release.xcconfig"; sourceTree = "<group>"; };
+		B5F75350C3AA638592079F57 /* Pods-Maa Shakti.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Maa Shakti.release.xcconfig"; path = "Pods/Target Support Files/Pods-Maa Shakti/Pods-Maa Shakti.release.xcconfig"; sourceTree = "<group>"; };
+		C7EC86AD171FCD480183AEE9 /* Pods-Maa ShaktiTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Maa ShaktiTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Maa ShaktiTests/Pods-Maa ShaktiTests.release.xcconfig"; sourceTree = "<group>"; };
+		C9BBA3FEF6920CB4C97E6CD5 /* Pods-Maa ShaktiUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Maa ShaktiUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Maa ShaktiUITests/Pods-Maa ShaktiUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		CAD9B7DA586147A9DFB81201 /* Pods-Maa ShaktiTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Maa ShaktiTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Maa ShaktiTests/Pods-Maa ShaktiTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +70,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EAF13466B5C71D414590B3D0 /* Pods_Maa_Shakti.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,6 +78,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				81ED3B0460367974EFFE3D63 /* Pods_Maa_ShaktiTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,6 +86,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B13C8456C4D1B7696990E98E /* Pods_Maa_ShaktiUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -77,10 +96,13 @@
 		18FAC7AA20F737F1006C89B9 = {
 			isa = PBXGroup;
 			children = (
+				18FAC7EE20F76D3E006C89B9 /* Custom Files */,
 				18FAC7B520F737F1006C89B9 /* Maa Shakti */,
 				18FAC7CA20F737FA006C89B9 /* Maa ShaktiTests */,
 				18FAC7D520F737FA006C89B9 /* Maa ShaktiUITests */,
 				18FAC7B420F737F1006C89B9 /* Products */,
+				32E8C4128334E782091A162B /* Pods */,
+				5941EE2E8CF2A9D8B05D107E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -98,7 +120,9 @@
 			isa = PBXGroup;
 			children = (
 				18FAC7B620F737F1006C89B9 /* AppDelegate.swift */,
-				18FAC7B820F737F1006C89B9 /* ViewController.swift */,
+				18FAC7E420F747B2006C89B9 /* SlideMenuViewController.swift */,
+				18FAC7EA20F7482F006C89B9 /* MenuViewController.swift */,
+				18FAC7EC20F74841006C89B9 /* DashBoardViewController.swift */,
 				18FAC7BA20F737F1006C89B9 /* Main.storyboard */,
 				18FAC7BD20F737FA006C89B9 /* Assets.xcassets */,
 				18FAC7BF20F737FA006C89B9 /* LaunchScreen.storyboard */,
@@ -125,6 +149,36 @@
 			path = "Maa ShaktiUITests";
 			sourceTree = "<group>";
 		};
+		18FAC7EE20F76D3E006C89B9 /* Custom Files */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Custom Files";
+			sourceTree = "<group>";
+		};
+		32E8C4128334E782091A162B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				40F9C14BDA08A53D181D6E0D /* Pods-Maa Shakti.debug.xcconfig */,
+				B5F75350C3AA638592079F57 /* Pods-Maa Shakti.release.xcconfig */,
+				CAD9B7DA586147A9DFB81201 /* Pods-Maa ShaktiTests.debug.xcconfig */,
+				C7EC86AD171FCD480183AEE9 /* Pods-Maa ShaktiTests.release.xcconfig */,
+				C9BBA3FEF6920CB4C97E6CD5 /* Pods-Maa ShaktiUITests.debug.xcconfig */,
+				92F02AD10537C4E068B41EE2 /* Pods-Maa ShaktiUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		5941EE2E8CF2A9D8B05D107E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2F0C0C722AC655C56B3ACE4A /* Pods_Maa_Shakti.framework */,
+				234B39C5AF8AD5988A67FDFE /* Pods_Maa_ShaktiTests.framework */,
+				388761154F71463C03F78C82 /* Pods_Maa_ShaktiUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -132,9 +186,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 18FAC7DB20F737FA006C89B9 /* Build configuration list for PBXNativeTarget "Maa Shakti" */;
 			buildPhases = (
+				116BF8237AEB9040AC8B5006 /* [CP] Check Pods Manifest.lock */,
 				18FAC7AF20F737F1006C89B9 /* Sources */,
 				18FAC7B020F737F1006C89B9 /* Frameworks */,
 				18FAC7B120F737F1006C89B9 /* Resources */,
+				E863C619EB278BA02CE0BA38 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -149,6 +205,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 18FAC7DE20F737FA006C89B9 /* Build configuration list for PBXNativeTarget "Maa ShaktiTests" */;
 			buildPhases = (
+				A9BCE8A3E447F09622D2C528 /* [CP] Check Pods Manifest.lock */,
 				18FAC7C320F737FA006C89B9 /* Sources */,
 				18FAC7C420F737FA006C89B9 /* Frameworks */,
 				18FAC7C520F737FA006C89B9 /* Resources */,
@@ -167,6 +224,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 18FAC7E120F737FA006C89B9 /* Build configuration list for PBXNativeTarget "Maa ShaktiUITests" */;
 			buildPhases = (
+				972E39C235E7781271E1E304 /* [CP] Check Pods Manifest.lock */,
 				18FAC7CE20F737FA006C89B9 /* Sources */,
 				18FAC7CF20F737FA006C89B9 /* Frameworks */,
 				18FAC7D020F737FA006C89B9 /* Resources */,
@@ -251,13 +309,98 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		116BF8237AEB9040AC8B5006 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Maa Shakti-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		972E39C235E7781271E1E304 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Maa ShaktiUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A9BCE8A3E447F09622D2C528 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Maa ShaktiTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E863C619EB278BA02CE0BA38 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Maa Shakti/Pods-Maa Shakti-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/MBProgressHUD/MBProgressHUD.framework",
+				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
+				"${BUILT_PRODUCTS_DIR}/SlideMenuControllerSwift/SlideMenuControllerSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MBProgressHUD.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SlideMenuControllerSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Maa Shakti/Pods-Maa Shakti-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		18FAC7AF20F737F1006C89B9 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				18FAC7B920F737F1006C89B9 /* ViewController.swift in Sources */,
+				18FAC7E520F747B2006C89B9 /* SlideMenuViewController.swift in Sources */,
+				18FAC7EB20F7482F006C89B9 /* MenuViewController.swift in Sources */,
 				18FAC7B720F737F1006C89B9 /* AppDelegate.swift in Sources */,
+				18FAC7ED20F74841006C89B9 /* DashBoardViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -428,6 +571,7 @@
 		};
 		18FAC7DC20F737FA006C89B9 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 40F9C14BDA08A53D181D6E0D /* Pods-Maa Shakti.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -446,6 +590,7 @@
 		};
 		18FAC7DD20F737FA006C89B9 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B5F75350C3AA638592079F57 /* Pods-Maa Shakti.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -464,6 +609,7 @@
 		};
 		18FAC7DF20F737FA006C89B9 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CAD9B7DA586147A9DFB81201 /* Pods-Maa ShaktiTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -485,6 +631,7 @@
 		};
 		18FAC7E020F737FA006C89B9 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C7EC86AD171FCD480183AEE9 /* Pods-Maa ShaktiTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -506,6 +653,7 @@
 		};
 		18FAC7E220F737FA006C89B9 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C9BBA3FEF6920CB4C97E6CD5 /* Pods-Maa ShaktiUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -526,6 +674,7 @@
 		};
 		18FAC7E320F737FA006C89B9 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 92F02AD10537C4E068B41EE2 /* Pods-Maa ShaktiUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

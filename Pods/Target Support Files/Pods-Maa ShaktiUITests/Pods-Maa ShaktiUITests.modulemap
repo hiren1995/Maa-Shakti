@@ -1,0 +1,6 @@
+framework module Pods_Maa_ShaktiUITests {
+  umbrella header "Pods-Maa ShaktiUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
