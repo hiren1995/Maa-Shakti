@@ -9,6 +9,8 @@
 import UIKit
 import SlideMenuControllerSwift
 
+var FromVC = 0
+
 class SlideMenuViewController: SlideMenuController {
 
     override func viewDidLoad() {
@@ -19,9 +21,23 @@ class SlideMenuViewController: SlideMenuController {
     
     override func awakeFromNib() {
         
-        
-        if let controller = self.storyboard?.instantiateViewController(withIdentifier: "dashBoardViewController") {
+        if(FromVC == 0)
+        {
+            if let controller = self.storyboard?.instantiateViewController(withIdentifier: "dashBoardViewController") {
                 self.mainViewController = controller
+            }
+        }
+        else if(FromVC == 1)
+        {
+            if let controller = self.storyboard?.instantiateViewController(withIdentifier: "confirmViewController") {
+                self.mainViewController = controller
+                
+            }
+        }
+        else if(FromVC == 2)
+        {
+            
+            
         }
         
         if let controller = self.storyboard?.instantiateViewController(withIdentifier: "menuViewController") {

@@ -8,6 +8,8 @@
 
 import UIKit
 
+var Gender = String()
+
 class DashBoardViewController: UIViewController {
 
     @IBOutlet var imgGirl: UIImageView!
@@ -35,7 +37,7 @@ class DashBoardViewController: UIViewController {
     
     func toAnimate()
     {
-        UIView.animate(withDuration: 3.0, delay: 0.0, options: .curveEaseOut, animations: {
+        UIView.animate(withDuration: 2.0, delay: 0.0, options: .curveEaseOut, animations: {
             
             self.imgGirl.transform = CGAffineTransform(rotationAngle: (20 * 3.14)/180)
             
@@ -52,7 +54,7 @@ class DashBoardViewController: UIViewController {
     
     func froAnimate()
     {
-        UIView.animate(withDuration: 3.0, delay: 0.0, options: .curveEaseOut, animations: {
+        UIView.animate(withDuration: 2.0, delay: 0.0, options: .curveEaseOut, animations: {
             
             self.imgGirl.transform = CGAffineTransform(rotationAngle: (-20 * 3.14)/180)
             
@@ -66,6 +68,28 @@ class DashBoardViewController: UIViewController {
             self.toAnimate()
             
         }
+        
+    }
+    
+    @IBAction func btnMaleTapped(_ sender: UIButton) {
+        
+        Gender = "Male"
+        gotoConfirmation()
+    }
+    
+    @IBAction func btnFemaleTapped(_ sender: UIButton) {
+
+        Gender = "Female"
+        gotoConfirmation()
+        
+    }
+    
+    func gotoConfirmation()
+    {
+        FromVC = 1
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let slideMenuViewController = storyboard.instantiateViewController(withIdentifier: "slideMenuViewController") as! SlideMenuViewController
+        self.present(slideMenuViewController, animated: true, completion: nil)
         
     }
     

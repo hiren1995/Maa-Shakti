@@ -16,6 +16,10 @@
 		18FAC7E520F747B2006C89B9 /* SlideMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18FAC7E420F747B2006C89B9 /* SlideMenuViewController.swift */; };
 		18FAC7EB20F7482F006C89B9 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18FAC7EA20F7482F006C89B9 /* MenuViewController.swift */; };
 		18FAC7ED20F74841006C89B9 /* DashBoardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18FAC7EC20F74841006C89B9 /* DashBoardViewController.swift */; };
+		18FAC7F020F76DF2006C89B9 /* CustomFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18FAC7EF20F76DF2006C89B9 /* CustomFunctions.swift */; };
+		18FAC7F220F76E07006C89B9 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18FAC7F120F76E07006C89B9 /* Constants.swift */; };
+		18FAC7F420F772C4006C89B9 /* MenuTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18FAC7F320F772C4006C89B9 /* MenuTableViewCell.swift */; };
+		18FAC7F620F78934006C89B9 /* ConfirmViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18FAC7F520F78934006C89B9 /* ConfirmViewController.swift */; };
 		81ED3B0460367974EFFE3D63 /* Pods_Maa_ShaktiTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 234B39C5AF8AD5988A67FDFE /* Pods_Maa_ShaktiTests.framework */; };
 		B13C8456C4D1B7696990E98E /* Pods_Maa_ShaktiUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 388761154F71463C03F78C82 /* Pods_Maa_ShaktiUITests.framework */; };
 		EAF13466B5C71D414590B3D0 /* Pods_Maa_Shakti.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F0C0C722AC655C56B3ACE4A /* Pods_Maa_Shakti.framework */; };
@@ -54,6 +58,10 @@
 		18FAC7E420F747B2006C89B9 /* SlideMenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlideMenuViewController.swift; sourceTree = "<group>"; };
 		18FAC7EA20F7482F006C89B9 /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
 		18FAC7EC20F74841006C89B9 /* DashBoardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashBoardViewController.swift; sourceTree = "<group>"; };
+		18FAC7EF20F76DF2006C89B9 /* CustomFunctions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomFunctions.swift; sourceTree = "<group>"; };
+		18FAC7F120F76E07006C89B9 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		18FAC7F320F772C4006C89B9 /* MenuTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuTableViewCell.swift; sourceTree = "<group>"; };
+		18FAC7F520F78934006C89B9 /* ConfirmViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmViewController.swift; sourceTree = "<group>"; };
 		234B39C5AF8AD5988A67FDFE /* Pods_Maa_ShaktiTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Maa_ShaktiTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2F0C0C722AC655C56B3ACE4A /* Pods_Maa_Shakti.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Maa_Shakti.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		388761154F71463C03F78C82 /* Pods_Maa_ShaktiUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Maa_ShaktiUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -122,7 +130,9 @@
 				18FAC7B620F737F1006C89B9 /* AppDelegate.swift */,
 				18FAC7E420F747B2006C89B9 /* SlideMenuViewController.swift */,
 				18FAC7EA20F7482F006C89B9 /* MenuViewController.swift */,
+				18FAC7F320F772C4006C89B9 /* MenuTableViewCell.swift */,
 				18FAC7EC20F74841006C89B9 /* DashBoardViewController.swift */,
+				18FAC7F520F78934006C89B9 /* ConfirmViewController.swift */,
 				18FAC7BA20F737F1006C89B9 /* Main.storyboard */,
 				18FAC7BD20F737FA006C89B9 /* Assets.xcassets */,
 				18FAC7BF20F737FA006C89B9 /* LaunchScreen.storyboard */,
@@ -152,6 +162,8 @@
 		18FAC7EE20F76D3E006C89B9 /* Custom Files */ = {
 			isa = PBXGroup;
 			children = (
+				18FAC7EF20F76DF2006C89B9 /* CustomFunctions.swift */,
+				18FAC7F120F76E07006C89B9 /* Constants.swift */,
 			);
 			path = "Custom Files";
 			sourceTree = "<group>";
@@ -399,8 +411,12 @@
 			files = (
 				18FAC7E520F747B2006C89B9 /* SlideMenuViewController.swift in Sources */,
 				18FAC7EB20F7482F006C89B9 /* MenuViewController.swift in Sources */,
+				18FAC7F420F772C4006C89B9 /* MenuTableViewCell.swift in Sources */,
+				18FAC7F620F78934006C89B9 /* ConfirmViewController.swift in Sources */,
+				18FAC7F020F76DF2006C89B9 /* CustomFunctions.swift in Sources */,
 				18FAC7B720F737F1006C89B9 /* AppDelegate.swift in Sources */,
 				18FAC7ED20F74841006C89B9 /* DashBoardViewController.swift in Sources */,
+				18FAC7F220F76E07006C89B9 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
