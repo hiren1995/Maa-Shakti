@@ -15,9 +15,13 @@ class DashBoardViewController: UIViewController {
     @IBOutlet var imgGirl: UIImageView!
     @IBOutlet var imgBoy: UIImageView!
    
+    @IBOutlet var btnFemaleRegis: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        btnFemaleRegis.isHidden = true
+        
         // Do any additional setup after loading the view.
     }
     

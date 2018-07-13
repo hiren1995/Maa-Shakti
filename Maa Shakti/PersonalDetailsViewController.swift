@@ -13,11 +13,34 @@ import UIKit
 //class PersonalDetailsViewController: UIViewController,FSCalendarDelegate,FSCalendarDataSource{
     
 class PersonalDetailsViewController: UIViewController{
-   
+    
     //@IBOutlet var CalenderView: FSCalendar!
     
+    @IBOutlet var txtFirstName: UITextField!
+    @IBOutlet var txtLastName: UITextField!
+    @IBOutlet var txtEmail: UITextField!
+    @IBOutlet var txtMobileNumber: UITextField!
     @IBOutlet var txtDOB: UITextField!
+    
+    
+    
+    
     var datePickerView  : UIDatePicker = UIDatePicker()
+    
+    @IBOutlet var imgFName: UIImageView!
+    @IBOutlet var imgLName: UIImageView!
+    @IBOutlet var imgMNumber: UIImageView!
+    @IBOutlet var imgEmail: UIImageView!
+    @IBOutlet var imgDOB: UIImageView!
+    
+    
+    @IBOutlet var lblWarningFName: UILabel!
+    @IBOutlet var lblWarningLName: UILabel!
+    @IBOutlet var lblWarningMNumber: UILabel!
+    @IBOutlet var lblWarningEmail: UILabel!
+    @IBOutlet var lblWarningDOB: UILabel!
+    
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -26,6 +49,15 @@ class PersonalDetailsViewController: UIViewController{
         //CalenderView.dataSource = self
         
         //CalenderView.isHidden = true
+        
+        addDoneButtonOnTextField()
+        
+        lblWarningFName.isHidden = true
+        lblWarningLName.isHidden = true
+        lblWarningMNumber.isHidden = true
+        lblWarningEmail.isHidden = true
+        lblWarningDOB.isHidden = true
+        
         
         // Do any additional setup after loading the view.
     }
@@ -38,6 +70,8 @@ class PersonalDetailsViewController: UIViewController{
     }
     
     @IBAction func txtDOBEditingBegin(_ sender: UITextField) {
+        
+        
         
         datePickerView.datePickerMode = UIDatePickerMode.date
         sender.inputView = datePickerView
@@ -53,10 +87,11 @@ class PersonalDetailsViewController: UIViewController{
         
         txtDOB.inputAccessoryView = toolbar
         
+        
     }
     @objc func handleDatePickertxtStart(sender: UIDatePicker) {
         
-        var dateFormatter = DateFormatter()
+        let dateFormatter = DateFormatter()
         dateFormatter.dateFormat = "dd/MM/yyyy"
         
         txtDOB.text = dateFormatter.string(from: sender.date)
@@ -73,6 +108,112 @@ class PersonalDetailsViewController: UIViewController{
     @objc func cancelDatePicker(){
         self.view.endEditing(true)
     }
+    
+    func addDoneButtonOnTextField()
+    {
+        let doneToolbar: UIToolbar = UIToolbar(frame: CGRect(x: 0, y: 0, width: 320, height: 50))
+        doneToolbar.barStyle = UIBarStyle.default
+        
+        let flexSpace = UIBarButtonItem(barButtonSystemItem: UIBarButtonSystemItem.flexibleSpace, target: nil, action: nil)
+        let done: UIBarButtonItem = UIBarButtonItem(title: "Done", style: UIBarButtonItemStyle.done, target: self, action: #selector(cancelTextField))
+        
+        let items = NSMutableArray()
+        items.add(flexSpace)
+        items.add(done)
+        
+        doneToolbar.items = items as! [UIBarButtonItem]
+        doneToolbar.sizeToFit()
+        
+        txtFirstName.inputAccessoryView = doneToolbar
+        txtLastName.inputAccessoryView = doneToolbar
+        txtMobileNumber.inputAccessoryView = doneToolbar
+        txtEmail.inputAccessoryView = doneToolbar
+        
+    }
+    @objc func cancelTextField(){
+        self.view.endEditing(true)
+        
+    }
+    
+   
+    
+    @IBAction func btnNextTapped(_ sender: UIButton) {
+        
+        if(txtFirstName.text == "" || txtLastName.text == "" || txtMobileNumber.text == "" || txtEmail.text == "" || txtDOB.text == "")
+        {
+            if(txtFirstName.text == "")
+            {
+                lblWarningFName.isHidden = false
+                imgFName.backgroundColor = UIColor.red
+            }
+            else
+            {
+                lblWarningFName.isHidden = true
+                imgFName.backgroundColor = ColorPrimary
+            }
+            
+            
+            if(txtLastName.text == "")
+            {
+                
+                lblWarningLName.isHidden = false
+                imgLName.backgroundColor = UIColor.red
+            }
+            else
+            {
+                lblWarningLName.isHidden = true
+                imgLName.backgroundColor = ColorPrimary
+                
+            }
+            
+            if(txtMobileNumber.text == "")
+            {
+                lblWarningMNumber.isHidden = false
+                imgMNumber.backgroundColor = UIColor.red
+            }
+            else
+            {
+                lblWarningMNumber.isHidden = true
+                imgMNumber.backgroundColor = ColorPrimary
+            }
+            
+            if(txtEmail.text == "")
+            {
+                lblWarningEmail.isHidden = false
+                imgEmail.backgroundColor = UIColor.red
+            }
+            else
+            {
+                lblWarningEmail.isHidden = true
+                imgEmail.backgroundColor = ColorPrimary
+            }
+            
+            if(txtDOB.text == "")
+            {
+                
+                lblWarningDOB.isHidden = false
+                imgDOB.backgroundColor = UIColor.red
+            }
+            else
+            {
+                lblWarningDOB.isHidden = true
+                imgDOB.backgroundColor = ColorPrimary
+                
+            }
+            
+        }
+        else
+        {
+            let storyboard = UIStoryboard(name: "Main", bundle: nil)
+            let addressDetailsViewController = storyboard.instantiateViewController(withIdentifier: "addressDetailsViewController") as! AddressDetailsViewController
+            
+            self.present(addressDetailsViewController, animated: true, completion: nil)
+        }
+        
+        
+    }
+    
+    
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
