@@ -7,12 +7,18 @@
 //
 
 import UIKit
+import FSCalendar
 
-class PersonalDetailsViewController: UIViewController {
-
+class PersonalDetailsViewController: UIViewController,FSCalendarDelegate,FSCalendarDataSource{
+   
+    @IBOutlet var CalenderView: FSCalendar!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        CalenderView.delegate = self
+        CalenderView.dataSource = self
+        
         // Do any additional setup after loading the view.
     }
     
@@ -22,7 +28,7 @@ class PersonalDetailsViewController: UIViewController {
         
         slidemenu?.openLeft()
     }
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.

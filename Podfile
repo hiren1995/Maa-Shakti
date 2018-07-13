@@ -12,7 +12,7 @@ target 'Maa Shakti' do
   pod 'SwiftyJSON', '~> 4.0'
   pod 'MBProgressHUD', '~> 1.1.0'
   pod 'SDWebImage', '~> 4.0'
-  
+  pod 'FSCalendar'
   
   target 'Maa ShaktiTests' do
     inherit! :search_paths
