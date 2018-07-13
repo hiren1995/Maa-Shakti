@@ -44,6 +44,15 @@ class ConfirmViewController: UIViewController {
     @IBAction func btnAgreeTapped(_ sender: UIButton) {
         
         
+        if TickFlag
+        {
+            FromVC = 2
+            let storyboard = UIStoryboard(name: "Main", bundle: nil)
+            let slideMenuViewController = storyboard.instantiateViewController(withIdentifier: "slideMenuViewController") as! SlideMenuViewController
+            self.present(slideMenuViewController, animated: true, completion: nil)
+        }
+        
+        
     }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

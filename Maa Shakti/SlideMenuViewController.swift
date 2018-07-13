@@ -37,7 +37,10 @@ class SlideMenuViewController: SlideMenuController {
         else if(FromVC == 2)
         {
             
-            
+            if let controller = self.storyboard?.instantiateViewController(withIdentifier: "personalDetailsViewController") {
+                self.mainViewController = controller
+                
+            }
         }
         
         if let controller = self.storyboard?.instantiateViewController(withIdentifier: "menuViewController") {

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1822868920F8686D00941857 /* PersonalDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1822868820F8686D00941857 /* PersonalDetailsViewController.swift */; };
 		18FAC7B720F737F1006C89B9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18FAC7B620F737F1006C89B9 /* AppDelegate.swift */; };
 		18FAC7BC20F737F1006C89B9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18FAC7BA20F737F1006C89B9 /* Main.storyboard */; };
 		18FAC7BE20F737FA006C89B9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18FAC7BD20F737FA006C89B9 /* Assets.xcassets */; };
@@ -43,6 +44,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1822868820F8686D00941857 /* PersonalDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalDetailsViewController.swift; sourceTree = "<group>"; };
 		18FAC7B320F737F1006C89B9 /* Maa Shakti.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Maa Shakti.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		18FAC7B620F737F1006C89B9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		18FAC7BB20F737F1006C89B9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -133,6 +135,7 @@
 				18FAC7F320F772C4006C89B9 /* MenuTableViewCell.swift */,
 				18FAC7EC20F74841006C89B9 /* DashBoardViewController.swift */,
 				18FAC7F520F78934006C89B9 /* ConfirmViewController.swift */,
+				1822868820F8686D00941857 /* PersonalDetailsViewController.swift */,
 				18FAC7BA20F737F1006C89B9 /* Main.storyboard */,
 				18FAC7BD20F737FA006C89B9 /* Assets.xcassets */,
 				18FAC7BF20F737FA006C89B9 /* LaunchScreen.storyboard */,
@@ -413,6 +416,7 @@
 				18FAC7EB20F7482F006C89B9 /* MenuViewController.swift in Sources */,
 				18FAC7F420F772C4006C89B9 /* MenuTableViewCell.swift in Sources */,
 				18FAC7F620F78934006C89B9 /* ConfirmViewController.swift in Sources */,
+				1822868920F8686D00941857 /* PersonalDetailsViewController.swift in Sources */,
 				18FAC7F020F76DF2006C89B9 /* CustomFunctions.swift in Sources */,
 				18FAC7B720F737F1006C89B9 /* AppDelegate.swift in Sources */,
 				18FAC7ED20F74841006C89B9 /* DashBoardViewController.swift in Sources */,
