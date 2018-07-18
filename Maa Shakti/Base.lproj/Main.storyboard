@@ -690,6 +690,9 @@ V2hhdCdzIHlvdXIgEERhdGUgb2YgQmlydGg/A
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="AreaEditingBegin:" destination="oBg-WG-6P8" eventType="editingDidBegin" id="Yfk-1R-Cj6"/>
+                                </connections>
                             </textField>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="kdI-hK-KQQ">
                                 <rect key="frame" x="16" y="424" width="343" height="1"/>
@@ -739,7 +742,7 @@ V2hhdCdzIHlvdXIgEERhdGUgb2YgQmlydGg/A
                                             <rect key="frame" x="0.0" y="0.0" width="343" height="69.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vuL-ye-iFg">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vuL-ye-iFg">
                                                     <rect key="frame" x="15" y="11" width="313" height="48"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -760,6 +763,7 @@ V2hhdCdzIHlvdXIgEERhdGUgb2YgQmlydGg/A
                     </view>
                     <connections>
                         <outlet property="AreaTableView" destination="nsV-F5-Rhf" id="Uxm-Ne-J20"/>
+                        <outlet property="ViewAlpha" destination="Wzh-bX-qlQ" id="kF0-ci-zNS"/>
                         <outlet property="imgArea" destination="kdI-hK-KQQ" id="keD-Dr-f23"/>
                         <outlet property="imgHouseNo" destination="oyl-e6-otc" id="XrC-bY-Kva"/>
                         <outlet property="imgLandmark" destination="NJD-zX-Vqs" id="Y5x-wZ-b5k"/>

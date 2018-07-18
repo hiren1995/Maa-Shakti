@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import SwiftyJSON
 
 class AddressDetailsViewController: UIViewController,UITableViewDelegate,UITableViewDataSource,XMLParserDelegate
 {
@@ -27,23 +28,24 @@ class AddressDetailsViewController: UIViewController,UITableViewDelegate,UITable
     @IBOutlet var lblWarningArea: UILabel!
     
     
+    @IBOutlet var ViewAlpha: UIView!
     @IBOutlet var AreaTableView: UITableView!
     
     let fileName = "areas"
     
+    var AreasArray = JSON()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        if let url = Bundle.main.url(forResource: fileName, withExtension: "json") {
-            do {
-                let data = try Data(contentsOf: url)
-                
-                
-                
-            } catch {
-                print("Error!! Unable to parse  \(fileName).json")
-            }
-        }
+        
+        AreaTableView.delegate = self
+        AreaTableView.dataSource = self
+        
+        parseJSON()
+        
+        ViewAlpha.isHidden = true
+        AreaTableView.isHidden = true
 
         // Do any additional setup after loading the view.
     }
@@ -54,8 +56,9 @@ class AddressDetailsViewController: UIViewController,UITableViewDelegate,UITable
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 10
+        //return 10
         
+        return AreasArray["area"].count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell
@@ -63,9 +66,42 @@ class AddressDetailsViewController: UIViewController,UITableViewDelegate,UITable
         
         let cell = AreaTableView.dequeueReusableCell(withIdentifier: "areaTableViewCell", for: indexPath) as! AreaTableViewCell
         
+        cell.lblAreaName.text = AreasArray["area"][indexPath.row]["name"].stringValue
         
         return cell
     }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        ViewAlpha.isHidden = true
+        AreaTableView.isHidden = true
+        
+    }
+    
+    func parseJSON()
+    {
+        if let url = Bundle.main.url(forResource: fileName, withExtension: "json") {
+            do {
+                
+                let data = try Data(contentsOf: url)
+                AreasArray = try JSON(data: data)
+                
+                print(self.AreasArray)
+                
+                
+            } catch {
+                print("Error!! Unable to parse  \(fileName).json")
+            }
+        }
+    }
+    
+    @IBAction func AreaEditingBegin(_ sender: UITextField) {
+        
+        self.view.endEditing(true)
+        
+        ViewAlpha.isHidden = false
+        AreaTableView.isHidden = false
+    }
+    
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
