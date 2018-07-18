@@ -346,6 +346,9 @@
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="txtEditingEnd:" destination="sYR-hw-oh1" eventType="editingChanged" id="cev-CM-Iis"/>
+                                </connections>
                             </textField>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ksk-sf-dbJ">
                                 <rect key="frame" x="16" y="203" width="343" height="1"/>
@@ -365,6 +368,9 @@
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="txtEditingEnd:" destination="sYR-hw-oh1" eventType="editingChanged" id="b7h-zP-nks"/>
+                                </connections>
                             </textField>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8Hv-E6-wrh">
                                 <rect key="frame" x="16" y="276" width="343" height="1"/>
@@ -439,7 +445,10 @@ V2hhdCdzIHlvdXIgEExhc3QgTmFtZT8
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" keyboardType="phonePad"/>
+                                <connections>
+                                    <action selector="txtEditingEnd:" destination="sYR-hw-oh1" eventType="editingChanged" id="HZt-X8-07q"/>
+                                </connections>
                             </textField>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="487-BC-Kpg">
                                 <rect key="frame" x="16" y="413" width="343" height="1"/>
@@ -464,7 +473,10 @@ EEVtYWlsA
 </string>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" keyboardType="emailAddress"/>
+                                <connections>
+                                    <action selector="txtEditingEnd:" destination="sYR-hw-oh1" eventType="editingChanged" id="eAh-EL-WR6"/>
+                                </connections>
                             </textField>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0mj-hH-ez7">
                                 <rect key="frame" x="16" y="486" width="343" height="1"/>
@@ -489,6 +501,7 @@ V2hhdCdzIHlvdXIgEEVtYWlsPw
                                 <textInputTraits key="textInputTraits"/>
                                 <connections>
                                     <action selector="txtDOBEditingBegin:" destination="sYR-hw-oh1" eventType="editingDidBegin" id="8r3-Hd-jB3"/>
+                                    <action selector="txtEditingEnd:" destination="sYR-hw-oh1" eventType="editingChanged" id="lyv-hs-uHT"/>
                                 </connections>
                             </textField>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="lNa-ow-1Vd">

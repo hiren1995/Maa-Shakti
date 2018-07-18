@@ -204,15 +204,132 @@ class PersonalDetailsViewController: UIViewController{
         }
         else
         {
-            let storyboard = UIStoryboard(name: "Main", bundle: nil)
-            let addressDetailsViewController = storyboard.instantiateViewController(withIdentifier: "addressDetailsViewController") as! AddressDetailsViewController
+            if isValidEmail(testStr: txtEmail.text!)
+            {
+                if isvalidPhoneNumber(value: txtMobileNumber.text!)
+                {
+                    let storyboard = UIStoryboard(name: "Main", bundle: nil)
+                    let addressDetailsViewController = storyboard.instantiateViewController(withIdentifier: "addressDetailsViewController") as! AddressDetailsViewController
+                    
+                    self.present(addressDetailsViewController, animated: true, completion: nil)
+                }
+                else
+                {
+                    lblWarningMNumber.isHidden = false
+                    imgMNumber.backgroundColor = UIColor.red
+                    lblWarningMNumber.text = "Please Enter Valid Phone Number"
+                }
+            }
+            else
+            {
+                lblWarningEmail.isHidden = false
+                imgEmail.backgroundColor = UIColor.red
+                lblWarningEmail.text = "Please Enter Valid Email"
+            }
             
-            self.present(addressDetailsViewController, animated: true, completion: nil)
+            
+            
+//            let storyboard = UIStoryboard(name: "Main", bundle: nil)
+//            let addressDetailsViewController = storyboard.instantiateViewController(withIdentifier: "addressDetailsViewController") as! AddressDetailsViewController
+//
+//            self.present(addressDetailsViewController, animated: true, completion: nil)
         }
         
         
     }
     
+    @IBAction func txtEditingEnd(_ sender: UITextField) {
+        
+        if(sender == txtFirstName)
+        {
+            if(sender.text != "")
+            {
+                lblWarningFName.isHidden = true
+                imgFName.backgroundColor = ColorPrimary
+            }
+            else
+            {
+                lblWarningFName.isHidden = false
+                imgFName.backgroundColor = UIColor.red
+            }
+            
+        }
+        
+        if(sender == txtLastName)
+        {
+            if(sender.text != "")
+            {
+                lblWarningLName.isHidden = true
+                imgLName.backgroundColor = ColorPrimary
+            }
+            else
+            {
+                lblWarningLName.isHidden = false
+                imgLName.backgroundColor = UIColor.red
+            }
+        }
+        
+        if(sender == txtMobileNumber)
+        {
+            if(sender.text != "")
+            {
+                if isvalidPhoneNumber(value: sender.text!)
+                {
+                    lblWarningMNumber.isHidden = true
+                    imgMNumber.backgroundColor = ColorPrimary
+                }
+                else
+                {
+                    lblWarningMNumber.isHidden = false
+                    imgMNumber.backgroundColor = UIColor.red
+                    lblWarningMNumber.text = "Please Enter Valid Phone Number"
+                }
+                
+            }
+            else
+            {
+                lblWarningMNumber.isHidden = false
+                imgMNumber.backgroundColor = UIColor.red
+            }
+        }
+        
+        if(sender == txtEmail)
+        {
+            if(sender.text != "")
+            {
+                if isValidEmail(testStr: txtEmail.text!)
+                {
+                    lblWarningEmail.isHidden = true
+                    imgEmail.backgroundColor = ColorPrimary
+                }
+                else
+                {
+                    lblWarningEmail.isHidden = false
+                    imgEmail.backgroundColor = UIColor.red
+                    lblWarningEmail.text = "Please Enter Valid Email"
+                }
+                
+            }
+            else
+            {
+                lblWarningEmail.isHidden = false
+                imgEmail.backgroundColor = UIColor.red
+            }
+        }
+        if(sender == txtDOB)
+        {
+            if(sender.text != "")
+            {
+                lblWarningDOB.isHidden = true
+                imgDOB.backgroundColor = ColorPrimary
+            }
+            else
+            {
+                lblWarningDOB.isHidden = false
+                imgDOB.backgroundColor = UIColor.red
+            }
+        }
+    }
     
     
     override func didReceiveMemoryWarning() {
