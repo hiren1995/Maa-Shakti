@@ -1,0 +1,374 @@
+{
+   "name": "Areas",
+   "area": [
+      {
+         "name": "Akota 390005"
+      },
+      {
+         "name": "Alkapuri 390005"
+      },
+      {
+         "name": "Bajwa 391310"
+      },
+      {
+         "name": "Baranpura 390001"
+      },
+      {
+         "name": "Bhadarpur 391125"
+      },
+      {
+         "name": "Bhaili 391410"
+      },
+      {
+         "name": "Bodeli 391135"
+      },
+      {
+         "name": "Chalamali 391141"
+      },
+      {
+         "name": "Chandkheda Society 391105"
+      },
+      {
+         "name": "Chandod 391105"
+      },
+      {
+         "name": "Chhani 391740"
+      },
+      {
+         "name": "Chhani Road 390002"
+      },
+      {
+         "name": "Chhota Udepur 391165"
+      },
+      {
+         "name": "Chokari 391443"
+      },
+      {
+         "name": "Choranda 391244"
+      },
+      {
+         "name": "Colony 391750"
+      },
+      {
+         "name": "Dabhoi R S 391110"
+      },
+      {
+         "name": "Dandia Bazar 390001"
+      },
+      {
+         "name": "Desar 391774"
+      },
+      {
+         "name": "Fateganj 390002"
+      },
+      {
+         "name": "Furtikui 391108"
+      },
+      {
+         "name": "Gad Boriad 391152"
+      },
+      {
+         "name": "Gendigate 390017"
+      },
+      {
+         "name": "Gothda 391773"
+      },
+      {
+         "name": "Harni Aerodrame 390006"
+      },
+      {
+         "name": "I D Hospital Road 390018"
+      },
+      {
+         "name": "Jabugam 391155"
+      },
+      {
+         "name": "Jarod 391510"
+      },
+      {
+         "name": "Jawahar Nagar 391320"
+      },
+      {
+         "name": "Jubilee Garden 390001"
+      },
+      {
+         "name": "Kadachhala 391142"
+      },
+      {
+         "name": "Kadipani 391175"
+      },
+      {
+         "name": "Kandari 391210"
+      },
+      {
+         "name": "Karakhadi 391450"
+      },
+      {
+         "name": "Karali 391136"
+      },
+      {
+         "name": "Kaumudi Society 391110"
+      },
+      {
+         "name": "Kavi 392170"
+      },
+      {
+         "name": "Kayavarohan 391220"
+      },
+      {
+         "name": "Khanderao Market 390001"
+      },
+      {
+         "name": "Koyli 391330"
+      },
+      {
+         "name": "Madanzampa 390001"
+      },
+      {
+         "name": "Mandala 391230"
+      },
+      {
+         "name": "Mandvi 390001"
+      },
+      {
+         "name": "Mankni 391126"
+      },
+      {
+         "name": "Masar Road 391421"
+      },
+      {
+         "name": "Miyagam 391245"
+      },
+      {
+         "name": "Miyagam Karjan 391240"
+      },
+      {
+         "name": "Mobha Road 391430"
+      },
+      {
+         "name": "Moti Amroli 391157"
+      },
+      {
+         "name": "Mujpur Padra 391442"
+      },
+      {
+         "name": "Nagarwada 390001"
+      },
+      {
+         "name": "Nana Amodra 391137"
+      },
+      {
+         "name": "Nandesari I E 391340"
+      },
+      {
+         "name": "Naswadi 391150"
+      },
+      {
+         "name": "Padmavati Chaugan 390001"
+      },
+      {
+         "name": "Panigate 390017"
+      },
+      {
+         "name": "Panvad 391168"
+      },
+      {
+         "name": "Parvata 391146"
+      },
+      {
+         "name": "Pavijetpur 391160"
+      },
+      {
+         "name": "Petrochemical 391346"
+      },
+      {
+         "name": "Petrofils 391347"
+      },
+      {
+         "name": "Por 391243"
+      },
+      {
+         "name": "Pratapganj 390002"
+      },
+      {
+         "name": "Pratapnagar R S 390004"
+      },
+      {
+         "name": "R S 391165"
+      },
+      {
+         "name": "Rangpur Z 391169"
+      },
+      {
+         "name": "Ranu 391445"
+      },
+      {
+         "name": "S N Road 390017"
+      },
+      {
+         "name": "Sadhli 391250"
+      },
+      {
+         "name": "Samlaya R S 391520"
+      },
+      {
+         "name": "Sandasal 391530"
+      },
+      {
+         "name": "Sankheda 391145"
+      },
+      {
+         "name": "Santkanvar Colony 390006"
+      },
+      {
+         "name": "Sarar 391241"
+      },
+      {
+         "name": "Sardarnagar Society 390002"
+      },
+      {
+         "name": "Sathod 391111"
+      },
+      {
+         "name": "Savli Town 391770"
+      },
+      {
+         "name": "Sewasi 391101"
+      },
+      {
+         "name": "Sharadnagar 390009"
+      },
+      {
+         "name": "Sinor 391115"
+      },
+      {
+         "name": "Sisodra 391116"
+      },
+      {
+         "name": "Sokhada 391745"
+      },
+      {
+         "name": "Southern Township 391320"
+      },
+      {
+         "name": "Subhanpura 390023"
+      },
+      {
+         "name": "Tanakhala 391151"
+      },
+      {
+         "name": "Tejgadh 391156"
+      },
+      {
+         "name": "Thuvavi 391107"
+      },
+      {
+         "name": "Township 391345"
+      },
+      {
+         "name": "Tundav Savli 391775"
+      },
+      {
+         "name": "Ajwa Road 390019"
+      },
+      {
+         "name": "Atlardra 390012"
+      },
+      {
+         "name": "Chemical Industry 390003"
+      },
+      {
+         "name": "E M E School 390008"
+      },
+      {
+         "name": "Fetepura 390006"
+      },
+      {
+         "name": "Ind Estate 390016"
+      },
+      {
+         "name": "Kareli Bag 390018"
+      },
+      {
+         "name": "Makarpura 390014"
+      },
+      {
+         "name": "Makarpura I E 390010"
+      },
+      {
+         "name": "Maneja 390013"
+      },
+      {
+         "name": "Manjalpur 390011"
+      },
+      {
+         "name": "O N G C Colony 390009"
+      },
+      {
+         "name": "Pratapnagar 390004"
+      },
+      {
+         "name": "Race Course 390007"
+      },
+      {
+         "name": "Sayajiganj 390005"
+      },
+      {
+         "name": "Vidyutnagar Colo 390015"
+      },
+      {
+         "name": "Vadodara Wadi 390017"
+      },
+      {
+         "name": "Vadodari Bhaghol 391110"
+      },
+      {
+         "name": "Vadu 391460"
+      },
+      {
+         "name": "Waghodia Road 390019"
+      },
+      {
+         "name": "Vagholia 391760"
+      },
+      {
+         "name": "Valan 392310"
+      },
+      {
+         "name": "Varnama 391242"
+      },
+      {
+         "name": "Vejpur 391535"
+      },
+      {
+         "name": "Vadodara 390001"
+      },
+      {
+         "name": "Gorwa 390016"
+      },
+      {
+         "name": "Tilakwada 391120"
+      },
+      {
+         "name": "Bhatpur 391130"
+      },
+      {
+         "name": "Kosindra 391140"
+      },
+      {
+         "name": "Ranoli 391350"
+      },
+      {
+         "name": "Mobha Road"
+      },
+      {
+         "name": "Padra 391440"
+      },
+      {
+         "name": "Dabka 391441"
+      },
+      {
+         "name": "Bhadarwa 391780"
+      }
+   ]
+}

@@ -9,6 +9,10 @@
 /* Begin PBXBuildFile section */
 		1822868920F8686D00941857 /* PersonalDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1822868820F8686D00941857 /* PersonalDetailsViewController.swift */; };
 		18747E3620F8DBAC002E4099 /* AddressDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18747E3520F8DBAC002E4099 /* AddressDetailsViewController.swift */; };
+		18BE55ED20FF032400D39180 /* areas.xml in Resources */ = {isa = PBXBuildFile; fileRef = 18BE55EC20FF032400D39180 /* areas.xml */; };
+		18BE55EF20FF0E4600D39180 /* AreaTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18BE55EE20FF0E4600D39180 /* AreaTableViewCell.swift */; };
+		18BE55F120FF1AD000D39180 /* Area.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18BE55F020FF1AD000D39180 /* Area.swift */; };
+		18BE55F520FF590600D39180 /* areas.json in Resources */ = {isa = PBXBuildFile; fileRef = 18BE55F420FF590600D39180 /* areas.json */; };
 		18FAC7B720F737F1006C89B9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18FAC7B620F737F1006C89B9 /* AppDelegate.swift */; };
 		18FAC7BC20F737F1006C89B9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18FAC7BA20F737F1006C89B9 /* Main.storyboard */; };
 		18FAC7BE20F737FA006C89B9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18FAC7BD20F737FA006C89B9 /* Assets.xcassets */; };
@@ -47,6 +51,10 @@
 /* Begin PBXFileReference section */
 		1822868820F8686D00941857 /* PersonalDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalDetailsViewController.swift; sourceTree = "<group>"; };
 		18747E3520F8DBAC002E4099 /* AddressDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddressDetailsViewController.swift; sourceTree = "<group>"; };
+		18BE55EC20FF032400D39180 /* areas.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = areas.xml; sourceTree = "<group>"; };
+		18BE55EE20FF0E4600D39180 /* AreaTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AreaTableViewCell.swift; sourceTree = "<group>"; };
+		18BE55F020FF1AD000D39180 /* Area.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Area.swift; sourceTree = "<group>"; };
+		18BE55F420FF590600D39180 /* areas.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = areas.json; sourceTree = "<group>"; };
 		18FAC7B320F737F1006C89B9 /* Maa Shakti.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Maa Shakti.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		18FAC7B620F737F1006C89B9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		18FAC7BB20F737F1006C89B9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -139,6 +147,7 @@
 				18FAC7F520F78934006C89B9 /* ConfirmViewController.swift */,
 				1822868820F8686D00941857 /* PersonalDetailsViewController.swift */,
 				18747E3520F8DBAC002E4099 /* AddressDetailsViewController.swift */,
+				18BE55EE20FF0E4600D39180 /* AreaTableViewCell.swift */,
 				18FAC7BA20F737F1006C89B9 /* Main.storyboard */,
 				18FAC7BD20F737FA006C89B9 /* Assets.xcassets */,
 				18FAC7BF20F737FA006C89B9 /* LaunchScreen.storyboard */,
@@ -170,6 +179,9 @@
 			children = (
 				18FAC7EF20F76DF2006C89B9 /* CustomFunctions.swift */,
 				18FAC7F120F76E07006C89B9 /* Constants.swift */,
+				18BE55EC20FF032400D39180 /* areas.xml */,
+				18BE55F420FF590600D39180 /* areas.json */,
+				18BE55F020FF1AD000D39180 /* Area.swift */,
 			);
 			path = "Custom Files";
 			sourceTree = "<group>";
@@ -305,6 +317,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				18BE55ED20FF032400D39180 /* areas.xml in Resources */,
+				18BE55F520FF590600D39180 /* areas.json in Resources */,
 				18FAC7C120F737FA006C89B9 /* LaunchScreen.storyboard in Resources */,
 				18FAC7BE20F737FA006C89B9 /* Assets.xcassets in Resources */,
 				18FAC7BC20F737F1006C89B9 /* Main.storyboard in Resources */,
@@ -419,6 +433,7 @@
 			files = (
 				18FAC7E520F747B2006C89B9 /* SlideMenuViewController.swift in Sources */,
 				18FAC7EB20F7482F006C89B9 /* MenuViewController.swift in Sources */,
+				18BE55EF20FF0E4600D39180 /* AreaTableViewCell.swift in Sources */,
 				18FAC7F420F772C4006C89B9 /* MenuTableViewCell.swift in Sources */,
 				18FAC7F620F78934006C89B9 /* ConfirmViewController.swift in Sources */,
 				1822868920F8686D00941857 /* PersonalDetailsViewController.swift in Sources */,
@@ -426,6 +441,7 @@
 				18747E3620F8DBAC002E4099 /* AddressDetailsViewController.swift in Sources */,
 				18FAC7B720F737F1006C89B9 /* AppDelegate.swift in Sources */,
 				18FAC7ED20F74841006C89B9 /* DashBoardViewController.swift in Sources */,
+				18BE55F120FF1AD000D39180 /* Area.swift in Sources */,
 				18FAC7F220F76E07006C89B9 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
