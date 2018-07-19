@@ -208,10 +208,10 @@ class PersonalDetailsViewController: UIViewController{
             {
                 if isvalidPhoneNumber(value: txtMobileNumber.text!)
                 {
+                    FromVC = 3
                     let storyboard = UIStoryboard(name: "Main", bundle: nil)
-                    let addressDetailsViewController = storyboard.instantiateViewController(withIdentifier: "addressDetailsViewController") as! AddressDetailsViewController
-                    
-                    self.present(addressDetailsViewController, animated: true, completion: nil)
+                    let slideMenuViewController = storyboard.instantiateViewController(withIdentifier: "slideMenuViewController") as! SlideMenuViewController
+                    self.present(slideMenuViewController, animated: true, completion: nil)
                 }
                 else
                 {
@@ -238,7 +238,7 @@ class PersonalDetailsViewController: UIViewController{
         
     }
     
-    @IBAction func txtEditingEnd(_ sender: UITextField) {
+    @IBAction func txtEditingValueChanged(_ sender: UITextField) {
         
         if(sender == txtFirstName)
         {
@@ -331,7 +331,31 @@ class PersonalDetailsViewController: UIViewController{
         }
     }
     
+    @IBAction func txtEditingBegin(_ sender: UITextField) {
+        
+        if(sender == txtMobileNumber)
+        {
+            self.view.frame.origin.y -= 100
+        }
+        if(sender == txtEmail)
+        {
+            self.view.frame.origin.y -= 200
+        }
+    }
     
+    @IBAction func txtEditingEnd(_ sender: UITextField) {
+        
+        if(sender == txtMobileNumber)
+        {
+            self.view.frame.origin.y += 100
+        }
+        if(sender == txtEmail)
+        {
+            self.view.frame.origin.y += 200
+        }
+    }
+    
+   
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.

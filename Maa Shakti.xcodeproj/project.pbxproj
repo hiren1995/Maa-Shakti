@@ -7,11 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1801CE91210088810064F950 /* areas.xml in Resources */ = {isa = PBXBuildFile; fileRef = 1801CE90210088800064F950 /* areas.xml */; };
+		1801CE93210088CF0064F950 /* ProofUploadViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1801CE92210088CF0064F950 /* ProofUploadViewController.swift */; };
 		1822868920F8686D00941857 /* PersonalDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1822868820F8686D00941857 /* PersonalDetailsViewController.swift */; };
 		18747E3620F8DBAC002E4099 /* AddressDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18747E3520F8DBAC002E4099 /* AddressDetailsViewController.swift */; };
-		18BE55ED20FF032400D39180 /* areas.xml in Resources */ = {isa = PBXBuildFile; fileRef = 18BE55EC20FF032400D39180 /* areas.xml */; };
 		18BE55EF20FF0E4600D39180 /* AreaTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18BE55EE20FF0E4600D39180 /* AreaTableViewCell.swift */; };
-		18BE55F120FF1AD000D39180 /* Area.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18BE55F020FF1AD000D39180 /* Area.swift */; };
 		18BE55F520FF590600D39180 /* areas.json in Resources */ = {isa = PBXBuildFile; fileRef = 18BE55F420FF590600D39180 /* areas.json */; };
 		18FAC7B720F737F1006C89B9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18FAC7B620F737F1006C89B9 /* AppDelegate.swift */; };
 		18FAC7BC20F737F1006C89B9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18FAC7BA20F737F1006C89B9 /* Main.storyboard */; };
@@ -49,11 +49,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1801CE90210088800064F950 /* areas.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = areas.xml; sourceTree = "<group>"; };
+		1801CE92210088CF0064F950 /* ProofUploadViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProofUploadViewController.swift; sourceTree = "<group>"; };
 		1822868820F8686D00941857 /* PersonalDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalDetailsViewController.swift; sourceTree = "<group>"; };
 		18747E3520F8DBAC002E4099 /* AddressDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddressDetailsViewController.swift; sourceTree = "<group>"; };
-		18BE55EC20FF032400D39180 /* areas.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = areas.xml; sourceTree = "<group>"; };
 		18BE55EE20FF0E4600D39180 /* AreaTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AreaTableViewCell.swift; sourceTree = "<group>"; };
-		18BE55F020FF1AD000D39180 /* Area.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Area.swift; sourceTree = "<group>"; };
 		18BE55F420FF590600D39180 /* areas.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = areas.json; sourceTree = "<group>"; };
 		18FAC7B320F737F1006C89B9 /* Maa Shakti.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Maa Shakti.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		18FAC7B620F737F1006C89B9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -148,6 +148,7 @@
 				1822868820F8686D00941857 /* PersonalDetailsViewController.swift */,
 				18747E3520F8DBAC002E4099 /* AddressDetailsViewController.swift */,
 				18BE55EE20FF0E4600D39180 /* AreaTableViewCell.swift */,
+				1801CE92210088CF0064F950 /* ProofUploadViewController.swift */,
 				18FAC7BA20F737F1006C89B9 /* Main.storyboard */,
 				18FAC7BD20F737FA006C89B9 /* Assets.xcassets */,
 				18FAC7BF20F737FA006C89B9 /* LaunchScreen.storyboard */,
@@ -179,9 +180,8 @@
 			children = (
 				18FAC7EF20F76DF2006C89B9 /* CustomFunctions.swift */,
 				18FAC7F120F76E07006C89B9 /* Constants.swift */,
-				18BE55EC20FF032400D39180 /* areas.xml */,
 				18BE55F420FF590600D39180 /* areas.json */,
-				18BE55F020FF1AD000D39180 /* Area.swift */,
+				1801CE90210088800064F950 /* areas.xml */,
 			);
 			path = "Custom Files";
 			sourceTree = "<group>";
@@ -317,8 +317,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				18BE55ED20FF032400D39180 /* areas.xml in Resources */,
 				18BE55F520FF590600D39180 /* areas.json in Resources */,
+				1801CE91210088810064F950 /* areas.xml in Resources */,
 				18FAC7C120F737FA006C89B9 /* LaunchScreen.storyboard in Resources */,
 				18FAC7BE20F737FA006C89B9 /* Assets.xcassets in Resources */,
 				18FAC7BC20F737F1006C89B9 /* Main.storyboard in Resources */,
@@ -439,9 +439,9 @@
 				1822868920F8686D00941857 /* PersonalDetailsViewController.swift in Sources */,
 				18FAC7F020F76DF2006C89B9 /* CustomFunctions.swift in Sources */,
 				18747E3620F8DBAC002E4099 /* AddressDetailsViewController.swift in Sources */,
+				1801CE93210088CF0064F950 /* ProofUploadViewController.swift in Sources */,
 				18FAC7B720F737F1006C89B9 /* AppDelegate.swift in Sources */,
 				18FAC7ED20F74841006C89B9 /* DashBoardViewController.swift in Sources */,
-				18BE55F120FF1AD000D39180 /* Area.swift in Sources */,
 				18FAC7F220F76E07006C89B9 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

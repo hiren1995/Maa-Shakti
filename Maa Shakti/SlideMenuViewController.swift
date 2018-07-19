@@ -43,6 +43,25 @@ class SlideMenuViewController: SlideMenuController {
             }
         }
         
+        else if(FromVC == 3)
+        {
+            
+            if let controller = self.storyboard?.instantiateViewController(withIdentifier: "addressDetailsViewController") {
+                self.mainViewController = controller
+                
+            }
+        }
+        
+        else if(FromVC == 4)
+        {
+            
+            if let controller = self.storyboard?.instantiateViewController(withIdentifier: "proofUploadViewController") {
+                self.mainViewController = controller
+                
+            }
+        }
+        
+        
         if let controller = self.storyboard?.instantiateViewController(withIdentifier: "menuViewController") {
             self.leftViewController = controller
         }

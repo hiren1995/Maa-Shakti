@@ -16,6 +16,7 @@ class AddressDetailsViewController: UIViewController,UITableViewDelegate,UITable
     @IBOutlet var txtSociety: UITextField!
     @IBOutlet var txtLandmark: UITextField!
     @IBOutlet var txtArea: UITextField!
+    @IBOutlet var txtCity: UITextField!
     
     @IBOutlet var imgHouseNo: UIImageView!
     @IBOutlet var imgSociety: UIImageView!
@@ -26,6 +27,7 @@ class AddressDetailsViewController: UIViewController,UITableViewDelegate,UITable
     @IBOutlet var lblWarningSociety: UILabel!
     @IBOutlet var lblWarningLandmark: UILabel!
     @IBOutlet var lblWarningArea: UILabel!
+    @IBOutlet var lblWarningCity: UILabel!
     
     
     @IBOutlet var ViewAlpha: UIView!
@@ -46,10 +48,80 @@ class AddressDetailsViewController: UIViewController,UITableViewDelegate,UITable
         
         ViewAlpha.isHidden = true
         AreaTableView.isHidden = true
-
+        
+        lblWarningArea.isHidden = true
+        lblWarningLandmark.isHidden = true
+        lblWarningSociety.isHidden = true
+        lblWarningHouseNo.isHidden = true
+        lblWarningCity.isHidden = true
+        
+        addDoneButtonOnTextField()
         // Do any additional setup after loading the view.
     }
     
+    @IBAction func btnNextTapped(_ sender: UIButton) {
+        
+        if(txtHouseNo.text == "" || txtSociety.text == "" || txtLandmark.text == "" || txtArea.text == "" || txtCity.text == "")
+        {
+            if(txtHouseNo.text == "")
+            {
+                lblWarningHouseNo.isHidden = false
+                imgHouseNo.backgroundColor = UIColor.red
+            }
+            else
+            {
+                lblWarningHouseNo.isHidden = true
+                imgHouseNo.backgroundColor = ColorPrimary
+            }
+            
+            
+            if(txtSociety.text == "")
+            {
+                
+                lblWarningSociety.isHidden = false
+                imgSociety.backgroundColor = UIColor.red
+            }
+            else
+            {
+                lblWarningSociety.isHidden = true
+                imgSociety.backgroundColor = ColorPrimary
+                
+            }
+            
+            if(txtLandmark.text == "")
+            {
+                lblWarningLandmark.isHidden = false
+                imgLandmark.backgroundColor = UIColor.red
+            }
+            else
+            {
+                lblWarningLandmark.isHidden = true
+                imgLandmark.backgroundColor = ColorPrimary
+            }
+            
+            if(txtArea.text == "")
+            {
+                lblWarningArea.isHidden = false
+                imgArea.backgroundColor = UIColor.red
+            }
+            else
+            {
+                lblWarningArea.isHidden = true
+                imgArea.backgroundColor = ColorPrimary
+            }
+            
+            
+        }
+        else
+        {
+            FromVC = 4
+            let storyboard = UIStoryboard(name: "Main", bundle: nil)
+            let slideMenuViewController = storyboard.instantiateViewController(withIdentifier: "slideMenuViewController") as! SlideMenuViewController
+            self.present(slideMenuViewController, animated: true, completion: nil)
+        }
+        
+        
+    }
     @IBAction func btnBackTapped(_ sender: UIButton) {
         
         self.dismiss(animated: true, completion: nil)
@@ -72,6 +144,22 @@ class AddressDetailsViewController: UIViewController,UITableViewDelegate,UITable
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+        let cell = AreaTableView.cellForRow(at: indexPath) as! AreaTableViewCell
+        
+        txtArea.text = cell.lblAreaName.text
+        
+        if(txtArea.text != "")
+        {
+            lblWarningArea.isHidden = true
+            imgArea.backgroundColor = ColorPrimary
+        }
+        else
+        {
+            lblWarningArea.isHidden = false
+            imgArea.backgroundColor = UIColor.red
+        }
+        
         ViewAlpha.isHidden = true
         AreaTableView.isHidden = true
         
@@ -100,6 +188,100 @@ class AddressDetailsViewController: UIViewController,UITableViewDelegate,UITable
         
         ViewAlpha.isHidden = false
         AreaTableView.isHidden = false
+    }
+    
+    @IBAction func txtEditingValueChanged(_ sender: UITextField) {
+        
+        if(sender == txtHouseNo)
+        {
+            if(sender.text != "")
+            {
+                lblWarningHouseNo.isHidden = true
+                imgHouseNo.backgroundColor = ColorPrimary
+            }
+            else
+            {
+                lblWarningHouseNo.isHidden = false
+                imgHouseNo.backgroundColor = UIColor.red
+            }
+            
+        }
+        
+        if(sender == txtSociety)
+        {
+            if(sender.text != "")
+            {
+                lblWarningSociety.isHidden = true
+                imgSociety.backgroundColor = ColorPrimary
+            }
+            else
+            {
+                lblWarningSociety.isHidden = false
+                imgSociety.backgroundColor = UIColor.red
+            }
+        }
+        
+        if(sender == txtLandmark)
+        {
+            if(sender.text != "")
+            {
+                lblWarningLandmark.isHidden = true
+                imgLandmark.backgroundColor = ColorPrimary
+            }
+            else
+            {
+                lblWarningLandmark.isHidden = false
+                imgLandmark.backgroundColor = UIColor.red
+            }
+        }
+        
+        if(sender == txtArea)
+        {
+            if(sender.text != "")
+            {
+                lblWarningArea.isHidden = true
+                imgArea.backgroundColor = ColorPrimary
+            }
+            else
+            {
+                lblWarningArea.isHidden = false
+                imgArea.backgroundColor = UIColor.red
+            }
+        }
+        
+    }
+    
+    func addDoneButtonOnTextField()
+    {
+        let doneToolbar: UIToolbar = UIToolbar(frame: CGRect(x: 0, y: 0, width: 320, height: 50))
+        doneToolbar.barStyle = UIBarStyle.default
+        
+        let flexSpace = UIBarButtonItem(barButtonSystemItem: UIBarButtonSystemItem.flexibleSpace, target: nil, action: nil)
+        let done: UIBarButtonItem = UIBarButtonItem(title: "Done", style: UIBarButtonItemStyle.done, target: self, action: #selector(cancelTextField))
+        
+        let items = NSMutableArray()
+        items.add(flexSpace)
+        items.add(done)
+        
+        doneToolbar.items = items as! [UIBarButtonItem]
+        doneToolbar.sizeToFit()
+        
+        txtHouseNo.inputAccessoryView = doneToolbar
+        txtSociety.inputAccessoryView = doneToolbar
+        txtLandmark.inputAccessoryView = doneToolbar
+        //txt.inputAccessoryView = doneToolbar
+        
+    }
+    @objc func cancelTextField(){
+        self.view.endEditing(true)
+        
+    }
+    
+    @IBAction func btnMenuTapped(_ sender: UIButton) {
+        
+        let slidemenu = self.slideMenuController()
+        
+        slidemenu?.openLeft()
     }
     
     
