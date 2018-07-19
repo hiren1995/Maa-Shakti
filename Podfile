@@ -13,6 +13,7 @@ target 'Maa Shakti' do
   pod 'MBProgressHUD', '~> 1.1.0'
   pod 'SDWebImage', '~> 4.0'
   pod 'FSCalendar'
+  pod 'CropViewController'
   
   target 'Maa ShaktiTests' do
     inherit! :search_paths

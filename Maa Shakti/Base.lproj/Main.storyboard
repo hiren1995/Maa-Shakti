@@ -864,13 +864,13 @@ V2hhdCdzIHlvdXIgEERhdGUgb2YgQmlydGg/A
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="regi_bg" translatesAutoresizingMaskIntoConstraints="NO" id="Vwk-0u-xrN">
                                 <rect key="frame" x="0.0" y="89" width="375" height="1074"/>
                             </imageView>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bf2-xl-Wwk">
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" bouncesZoom="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bf2-xl-Wwk">
                                 <rect key="frame" x="16" y="159" width="343" height="984"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nb2-os-0q5">
                                         <rect key="frame" x="0.0" y="0.0" width="343" height="984"/>
                                         <subviews>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="z2q-54-kQ3">
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="z2q-54-kQ3">
                                                 <rect key="frame" x="96" y="0.0" width="150" height="150"/>
                                                 <color key="backgroundColor" red="0.0" green="0.64313725489999995" blue="0.69411764710000001" alpha="1" colorSpace="calibratedRGB"/>
                                                 <constraints>
@@ -889,6 +889,9 @@ V2hhdCdzIHlvdXIgEERhdGUgb2YgQmlydGg/A
                                                     <constraint firstAttribute="height" constant="150" id="anB-HE-1fM"/>
                                                     <constraint firstAttribute="width" constant="150" id="i8Z-mU-4WY"/>
                                                 </constraints>
+                                                <connections>
+                                                    <action selector="SelectImage:" destination="das-ai-Fdu" eventType="touchUpInside" id="H4O-Gh-tO9"/>
+                                                </connections>
                                             </button>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Photo ID Proof" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dSt-yf-eFB">
                                                 <rect key="frame" x="0.0" y="190" width="343" height="40"/>
@@ -929,6 +932,9 @@ V2hhdCdzIHlvdXIgEERhdGUgb2YgQmlydGg/A
                                                     <constraint firstAttribute="height" constant="180" id="6nC-l8-Yte"/>
                                                     <constraint firstAttribute="width" constant="343" id="iEm-Kf-s9H"/>
                                                 </constraints>
+                                                <connections>
+                                                    <action selector="SelectImage:" destination="das-ai-Fdu" eventType="touchUpInside" id="JB9-nE-1mP"/>
+                                                </connections>
                                             </button>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Photo ID Proof" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="538-x2-rSf">
                                                 <rect key="frame" x="0.0" y="515" width="343" height="40"/>
@@ -969,6 +975,9 @@ V2hhdCdzIHlvdXIgEERhdGUgb2YgQmlydGg/A
                                                     <constraint firstAttribute="width" constant="343" id="Ssh-c1-ojo"/>
                                                     <constraint firstAttribute="height" constant="180" id="tOf-45-hGl"/>
                                                 </constraints>
+                                                <connections>
+                                                    <action selector="SelectImage:" destination="das-ai-Fdu" eventType="touchUpInside" id="ua6-cW-cOu"/>
+                                                </connections>
                                             </button>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="By Continuing this Registration Process,you agree to terms and conditions disclose at" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gOe-lX-uVu">
                                                 <rect key="frame" x="0.0" y="817" width="343" height="44"/>
@@ -1097,6 +1106,9 @@ V2hhdCdzIHlvdXIgEERhdGUgb2YgQmlydGg/A
                     </view>
                     <size key="freeformSize" width="375" height="1163"/>
                     <connections>
+                        <outlet property="btnAddressProofPic" destination="8j4-NG-2an" id="TNa-i0-Pcw"/>
+                        <outlet property="btnCandidatePic" destination="OpJ-nv-BLL" id="h3C-rd-t5K"/>
+                        <outlet property="btnIDProofPic" destination="kQS-Pv-Bgx" id="gGN-S5-4OT"/>
                         <outlet property="imgAdressProofLine" destination="xlh-Gg-Pdz" id="bvK-Zh-MZY"/>
                         <outlet property="imgAdressProofPic" destination="s6I-he-B0b" id="122-dL-g1s"/>
                         <outlet property="imgCandidatePic" destination="z2q-54-kQ3" id="K6G-dS-6JC"/>
