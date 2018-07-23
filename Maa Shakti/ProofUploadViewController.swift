@@ -9,8 +9,9 @@
 import UIKit
 import CropViewController
 
-class ProofUploadViewController: UIViewController,UIImagePickerControllerDelegate,UINavigationControllerDelegate,CropViewControllerDelegate {
-
+class ProofUploadViewController: UIViewController,UIImagePickerControllerDelegate,UINavigationControllerDelegate,CropViewControllerDelegate,UITableViewDelegate,UITableViewDataSource {
+    
+    
     @IBOutlet var imgCandidatePic: UIImageView!
     @IBOutlet var imgIDProofPic: UIImageView!
     @IBOutlet var imgAdressProofPic: UIImageView!
@@ -35,9 +36,23 @@ class ProofUploadViewController: UIViewController,UIImagePickerControllerDelegat
     
     var imgButton = String()
     
+    @IBOutlet var ProofsTableView: UITableView!
+    @IBOutlet var AplhaView: UIView!
+    
+    var SelectiontxtBox = "ID"
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        
+        lblWarningIDProof.isHidden = true
+        lblWarningAddressProof.isHidden = true
+        
+        ProofsTableView.delegate = self
+        ProofsTableView.dataSource = self
+        
+        ProofsTableView.isHidden = true
+        AplhaView.isHidden = true
         // Do any additional setup after loading the view.
     }
 
@@ -50,7 +65,7 @@ class ProofUploadViewController: UIViewController,UIImagePickerControllerDelegat
     
     @IBAction func btnPrivacyURLTapped(_ sender: UIButton) {
         
-        guard let url = URL(string: "https://mashakti.com/privacy") else {
+        guard let url = URL(string: privacyURL) else {
             return //be safe
         }
         
@@ -81,18 +96,18 @@ class ProofUploadViewController: UIViewController,UIImagePickerControllerDelegat
     
     func uploadPic(){
         
-        var alert:UIAlertController=UIAlertController(title: "Choose Image", message: nil, preferredStyle: UIAlertControllerStyle.actionSheet)
-        var cameraAction = UIAlertAction(title: "Camera", style: UIAlertActionStyle.default)
+        let alert:UIAlertController=UIAlertController(title: "Choose Image", message: nil, preferredStyle: UIAlertControllerStyle.actionSheet)
+        let cameraAction = UIAlertAction(title: "Camera", style: UIAlertActionStyle.default)
         {
             UIAlertAction in
             self.openCamera()
         }
-        var gallaryAction = UIAlertAction(title: "Gallery", style: UIAlertActionStyle.default)
+        let gallaryAction = UIAlertAction(title: "Gallery", style: UIAlertActionStyle.default)
         {
             UIAlertAction in
             self.openGallary()
         }
-        var cancelAction = UIAlertAction(title: "Cancel", style: UIAlertActionStyle.cancel)
+        let cancelAction = UIAlertAction(title: "Cancel", style: UIAlertActionStyle.cancel)
         {
             UIAlertAction in
         }
@@ -171,6 +186,128 @@ class ProofUploadViewController: UIViewController,UIImagePickerControllerDelegat
         dismiss(animated: true, completion: nil)
     }
     
+    
+    @IBAction func btnNextTapped(_ sender: UIButton) {
+        
+        if(txtIDProof.text == "" || txtAddressProof.text == "" || imgCandidatePic.image == UIImage(named: "user_placeholder") || imgIDProofPic.image == UIImage(named: "placeholder") || imgAdressProofPic.image == UIImage(named: "placeholder"))
+        {
+            if(txtIDProof.text == "")
+            {
+                lblWarningIDProof.isHidden = false
+                imgIDProofLine.backgroundColor = UIColor.red
+            }
+            else
+            {
+                lblWarningIDProof.isHidden = true
+                imgIDProofLine.backgroundColor = ColorPrimary
+            }
+            
+            if(txtAddressProof.text == "")
+            {
+                lblWarningAddressProof.isHidden = false
+                imgAdressProofLine.backgroundColor = UIColor.red
+            }
+            else
+            {
+                lblWarningAddressProof.isHidden = true
+                imgAdressProofLine.backgroundColor = ColorPrimary
+            }
+            
+            if(imgCandidatePic.image == UIImage(named: "user_placeholder"))
+            {
+                self.showAlert(Title: "Alert", Message: "Please select Image")
+            }
+            
+            if(imgIDProofPic.image == UIImage(named: "placeholder"))
+            {
+                self.showAlert(Title: "Alert", Message: "Please select Image")
+            }
+            if(imgAdressProofPic.image == UIImage(named: "placeholder"))
+            {
+                self.showAlert(Title: "Alert", Message: "Please select Image")
+            }
+        }
+        else
+        {
+            
+        }
+        
+    }
+    @IBAction func btnBackTapped(_ sender: UIButton) {
+        
+        
+        
+    }
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        
+        if(SelectiontxtBox == "ID")
+        {
+            return IDProofArray.count
+        }
+        else
+        {
+            return AddressProofArray.count
+        }
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        
+        let cell = ProofsTableView.dequeueReusableCell(withIdentifier: "areaTableViewCell", for: indexPath) as! AreaTableViewCell
+        
+        if(SelectiontxtBox == "ID")
+        {
+            cell.lblAreaName.text = IDProofArray[indexPath.row]
+        }
+        else
+        {
+            cell.lblAreaName.text = AddressProofArray[indexPath.row]
+        }
+        
+        return cell
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+        let cell = ProofsTableView.cellForRow(at: indexPath) as! AreaTableViewCell
+        
+        if(SelectiontxtBox == "ID")
+        {
+            txtIDProof.text = cell.lblAreaName.text
+            
+            lblWarningIDProof.isHidden = true
+            imgIDProofLine.backgroundColor = ColorPrimary
+            
+        }
+        else
+        {
+            txtAddressProof.text = cell.lblAreaName.text
+            
+            lblWarningAddressProof.isHidden = true
+            imgAdressProofLine.backgroundColor = ColorPrimary
+        }
+        
+        ProofsTableView.isHidden = true
+        AplhaView.isHidden = true
+        self.view.endEditing(true)
+    }
+    
+    @IBAction func txtSelectionBegin(_ sender: UITextField) {
+        
+        if(sender == txtIDProof)
+        {
+            SelectiontxtBox = "ID"
+            
+        }
+        else
+        {
+            SelectiontxtBox = "Address"
+        }
+        
+        ProofsTableView.reloadData()
+        ProofsTableView.isHidden = false
+        AplhaView.isHidden = false
+    }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.

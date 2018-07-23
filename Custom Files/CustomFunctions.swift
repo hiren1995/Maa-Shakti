@@ -85,6 +85,16 @@ extension UIApplication {
     }
 }
 
+extension UIViewController{
+    
+    func showAlert(Title : String , Message : String)
+    {
+        let alert = UIAlertController(title: Title, message: Message, preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: "OK", style: .cancel, handler: nil))
+        self.present(alert, animated: true, completion: nil)
+    }
+}
+
 func isvalidPhoneNumber(value: String) -> Bool {
     let PHONE_REGEX = "^\\d{10}$"
     let phoneTest = NSPredicate(format: "SELF MATCHES %@", PHONE_REGEX)

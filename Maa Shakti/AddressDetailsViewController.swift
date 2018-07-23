@@ -162,7 +162,7 @@ class AddressDetailsViewController: UIViewController,UITableViewDelegate,UITable
         
         ViewAlpha.isHidden = true
         AreaTableView.isHidden = true
-        
+        self.view.endEditing(true)
     }
     
     func parseJSON()
